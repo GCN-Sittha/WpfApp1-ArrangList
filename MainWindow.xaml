@@ -8,9 +8,9 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <TextBox x:Name="txtBox" HorizontalAlignment="Left" Height="81" Margin="160,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="478"/>
-        <Button Content="Add" HorizontalAlignment="Left" Height="79" Margin="160,217,0,0" VerticalAlignment="Top" Width="156" Click="Button_Click_1"/>
-        <Button Content="Remove" HorizontalAlignment="Left" Height="79" Margin="337,217,0,0" VerticalAlignment="Top" Width="156" Click="Button_Click_2"/>
-        <Button Content="Show All" HorizontalAlignment="Left" Height="79" Margin="518,217,0,0" VerticalAlignment="Top" Width="156" Click="Button_Click"/>
+        <Button x:Name="addButton" Content="Add" HorizontalAlignment="Left" Height="79" Margin="160,217,0,0" VerticalAlignment="Top" Width="156" Click="addButton_Click"/>
+        <Button x:Name="removeButton" Content="Remove" HorizontalAlignment="Left" Height="79" Margin="337,217,0,0" VerticalAlignment="Top" Width="156" Click="removeButton_Click"/>
+        <Button x:Name="showButton" Content="Show All" HorizontalAlignment="Left" Height="79" Margin="518,217,0,0" VerticalAlignment="Top" Width="156" Click="showButton_Click"/>
 
     </Grid>
 </Window>

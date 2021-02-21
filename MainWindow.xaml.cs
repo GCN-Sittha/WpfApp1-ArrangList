@@ -28,43 +28,40 @@ namespace WpfApp1_ArrangList
             arrayList = new ArrayList();
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void addButton_Click(object sender, RoutedEventArgs e)
         {
-            if (txtBox.Text == " ")
-            {
-                MessageBox.Show("Please input data here");
-            }
-            else
-            {
-                arrayList.Add(txtBox.Text);
-                MessageBox.Show(txtBox.Text);
-                txtBox.Text = " ";
-            }
-
+                if (txtBox.Text == " ")
+                {
+                    MessageBox.Show("Please input data here");
+                }
+                else
+                {
+                    arrayList.Add(txtBox.Text);
+                    MessageBox.Show(txtBox.Text);
+                    txtBox.Text = " ";
+                }
         }
 
-        private void Button_Click_2(object sender, RoutedEventArgs e)
+        private void removeButton_Click(object sender, RoutedEventArgs e)
         {
             if (txtBox.Text == " ")
             {
                 MessageBox.Show("Please input you data here");
-            } else
+            }
+            else
             {
                 arrayList.Remove(txtBox.Text);
                 MessageBox.Show(txtBox.Text);
                 txtBox.Text = " ";
             }
-           
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void showButton_Click(object sender, RoutedEventArgs e)
         {
-
             foreach (string data in arrayList)
             {
                 MessageBox.Show(data.ToString());
             }
-
         }
     }
 }
